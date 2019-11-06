@@ -8,7 +8,7 @@ class Avances extends StatelessWidget {
     return new Scaffold(
       appBar: new AppBar(title: new Text("¡Comparte tus Avances!"), backgroundColor:Color(0XFF018700), centerTitle: true),
       body: new Center(
-        child: new Text("ABCDEFGH"),
+        child: new Text("WORK IN PROGRESS"),
       ),
 
     drawer: MyDrawer()

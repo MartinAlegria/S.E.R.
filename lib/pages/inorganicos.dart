@@ -3,7 +3,7 @@ import './drawer.dart';
 
 class Inorganicos extends StatelessWidget {
 
-   Container Cosillo(String image, String heading, String subhead){
+  Container Cosillo(String image, String heading, String subhead){
     return  Container(
                   width: 160.0,
                   child: Card(
@@ -80,7 +80,7 @@ class Inorganicos extends StatelessWidget {
         Text(
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor a tellus et efficitur. In ut tellus suscipit ante rhoncus varius nec vitae sapien. Quisque dictum, mi eget venenatis pharetra, lorem sem vulputate lectus, et suscipit nisi turpis in nibh. Donec egestas ultrices dignissim. Proin rhoncus turpis turpis, eget volutpat sapien ornare ac. Etiam hendrerit, eros vitae eleifend sagittis, libero magna porttitor lectus, eu sagittis orci lacus non libero. Nunc at arcu ullamcorper, aliquam mauris ultricies, fermentum ante.",
                 style: new TextStyle(
-                  fontSize: 20.0, color: Colors.black,
+                  fontSize: 18.0, color: Colors.black,
                 ),
                 textAlign: TextAlign.justify,
               ),

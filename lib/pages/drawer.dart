@@ -77,17 +77,6 @@ class MyDrawer extends StatelessWidget {
               
             ),
 
-            //PELIGROS DE NO SEPARAR
-            new ListTile(
-              title: new Text("Peligro de No Separar"),
-              leading: new Icon(Icons.device_unknown),
-              onTap: () {
-                Navigator.of(context).pop();
-                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new NoSeparar()));
-              }
-            ),
-
-
           //TIPS
             new ListTile(
               title: new Text("Tips"),
