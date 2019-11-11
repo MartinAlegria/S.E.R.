@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:ser_1/pages/drawer_pages/sub_pages/cred.dart';
 import './drawer.dart';
-import 'package:ser_1/pages/drawer_pages/sub_pages/in_organicos.dart';
+import 'package:ser_1/pages/drawer_pages/sub_pages/fh.dart';
 
 
-class Inorganicos extends StatelessWidget {
+class Creditos extends StatelessWidget {
 
   Center Cosillo1(String image, String heading, String subhead, BuildContext context, ){
     return  Center(
@@ -30,7 +31,7 @@ class Inorganicos extends StatelessWidget {
         onTap: () {                          
         
         Navigator.of(context).pop();
-        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Reciclables()));
+        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Patrocinadores()));
         
         },                      
      )
@@ -62,7 +63,7 @@ class Inorganicos extends StatelessWidget {
         onTap: () {                          
         
         Navigator.of(context).pop();
-        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new NoReciclables()));
+        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Socios()));
         
         },                      
      )
@@ -94,7 +95,7 @@ class Inorganicos extends StatelessWidget {
         onTap: () {                          
         
         Navigator.of(context).pop();
-        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Dano_Inorg()));
+        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Creadores()));
         
         },                      
      )
@@ -127,7 +128,7 @@ class Inorganicos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Inorganicos"), backgroundColor:Color(0XFF018700), centerTitle: true),
+      appBar: new AppBar(title: new Text("Creditos"), backgroundColor:Color(0XFF018700), centerTitle: true),
       drawer: MyDrawer(),
       body: new ListView(
        scrollDirection: Axis.vertical,
@@ -140,7 +141,7 @@ class Inorganicos extends StatelessWidget {
           ListView(
             scrollDirection: Axis.horizontal,
               children: <Widget>[
-                Cosillo1('https://cdn.pixabay.com/photo/2014/04/02/10/56/recycling-304974_960_720.png', 'Reciclables', 'Inorganicos', context),
+                Cosillo1('https://images.vexels.com/media/users/3/152812/isolated/preview/6aef37bbbf00a914ba90fe18f313db7c-ilustraci--n-de-edificio-de-escuela-primaria-by-vexels.png', 'Patrocinadores', 'Creditos', context),
               ],
           ),
         ),
@@ -153,13 +154,13 @@ class Inorganicos extends StatelessWidget {
             scrollDirection: Axis.horizontal,
               children: <Widget>[
 
-                Cosillo2('https://image.flaticon.com/icons/png/512/92/92862.png', 'No Reciclables', 'Inorganicos', context),
+                Cosillo2('https://images.vexels.com/media/users/3/157496/isolated/preview/9d3481090a8c628b9ae551f6a1b2a12f-icono-del-ordenador-port--til-de-oficina-by-vexels.png', 'Socios Difusion', 'Creditos', context),
 
               ],
           ),
         ),
 
-      Cosillo3('https://www.sccpre.cat/mypng/detail/72-722336_danger-clipart-construction-sign-triangle-warning-sign.png', 'Daño que Causa', 'Inorganicos', context),
+      Cosillo3('https://pngimage.net/wp-content/uploads/2018/06/gobierno-png-2.png', 'Creadores', 'Creditos', context),
 
 
        ],

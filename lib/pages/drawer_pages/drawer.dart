@@ -5,6 +5,7 @@ import 'package:ser_1/pages/drawer_pages/no_separar.dart';
 import 'package:ser_1/pages/drawer_pages/tech.dart';
 import 'package:ser_1/pages/drawer_pages/tips.dart';
 import 'package:ser_1/pages/drawer_pages/daño.dart';
+import 'package:ser_1/pages/drawer_pages/creditos.dart';
 
 
 import './organicos.dart';
@@ -17,6 +18,7 @@ import './tips.dart';
 import './tech.dart';
 import './avances.dart';
 import './daño.dart';
+import './relleno.dart';
 
 class MyDrawer extends StatelessWidget {
 
@@ -80,7 +82,7 @@ class MyDrawer extends StatelessWidget {
 
             // RESIDUOS PELIGROSOS Y MANEJO ESPECIAL
             new ListTile(
-              title: new Text("Peligrosos y Manejo Esp."),
+              title: new Text("Residuos Especiales"),
               leading: new Icon(Icons.warning),
               onTap: () {
                 Navigator.of(context).pop();
@@ -95,7 +97,7 @@ class MyDrawer extends StatelessWidget {
               leading: new Icon(Icons.delete_sweep),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new FueraHogar()));
+                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Relleno()));
               }
             ),
 
@@ -112,7 +114,7 @@ class MyDrawer extends StatelessWidget {
 
             //Tecnologias para Tratamiento
             new ListTile(
-              title: new Text("Tecnologias para Tratamiento de Residuos"),
+              title: new Text("Aprovechando la Basura"),
               leading: new Icon(Icons.restore_from_trash),
               onTap: () {
                 Navigator.of(context).pop();
@@ -137,6 +139,17 @@ class MyDrawer extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Avances()));
+              }
+            ),
+
+
+             //Creditos
+            new ListTile(
+              title: new Text("Creditos"),
+              leading: new Icon(Icons.perm_device_information),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Creditos()));
               }
             ),
 

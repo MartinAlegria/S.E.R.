@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './drawer.dart';
-import 'package:ser_1/pages/drawer_pages/dano_pages/daños.dart';
+import 'package:ser_1/pages/drawer_pages/sub_pages/daños.dart';
 
 
 class Dano extends StatelessWidget {
