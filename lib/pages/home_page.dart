@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ser_1/pages/drawer.dart';
+import 'package:ser_1/pages/drawer_pages/drawer.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     return new Scaffold(
       appBar: new AppBar(title: new Text("PROYECTO S.E.R"), backgroundColor:Color(0XFF018700), centerTitle: true,), //APP BAR ---> PROJECTO
       drawer: MyDrawer(),
-      body:  
+      /*body:  
       new ListView(
         scrollDirection: Axis.vertical,
         children: <Widget>[
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
 
         ],
 
-      )
+      )*/
     );
   }
 
