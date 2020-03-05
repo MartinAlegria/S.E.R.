@@ -17,7 +17,7 @@ class Creditos extends StatelessWidget {
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        new Center(child:  Image.network(image, height: 150, width: 150),)
+                        new Center(child:  Image.asset(image, height: 150, width: 150),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
                           subtitle: new Center(child: Text(subhead)),
@@ -30,7 +30,6 @@ class Creditos extends StatelessWidget {
         ,                        
         onTap: () {                          
         
-        Navigator.of(context).pop();
         Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Patrocinadores()));
         
         },                      
@@ -49,7 +48,7 @@ class Creditos extends StatelessWidget {
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        new Center(child:  Image.network(image, height: 150, width: 150),)
+                        new Center(child:  Image.asset(image, height: 150, width: 150),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
                           subtitle: new Center(child: Text(subhead)),
@@ -62,7 +61,6 @@ class Creditos extends StatelessWidget {
         ,                        
         onTap: () {                          
         
-        Navigator.of(context).pop();
         Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Socios()));
         
         },                      
@@ -81,7 +79,7 @@ class Creditos extends StatelessWidget {
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        new Center(child:  Image.network(image, height: 150, width: 150),)
+                        new Center(child:  Image.asset(image, height: 150, width: 150),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
                           subtitle: new Center(child: Text(subhead)),
@@ -94,7 +92,6 @@ class Creditos extends StatelessWidget {
         ,                        
         onTap: () {                          
         
-        Navigator.of(context).pop();
         Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Creadores()));
         
         },                      
@@ -102,28 +99,6 @@ class Creditos extends StatelessWidget {
     );
   }
 
-  
-  
-
-    Container TextoCosillo(){
-    return  Container(
-                  width: 250.0,
-                  child: Card(
-                    child: Wrap(
-                      children: <Widget>[
-                        Text(
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor a tellus et efficitur. In ut tellus suscipit ante rhoncus varius nec vitae sapien. Quisque dictum, mi eget venenatis pharetra, lorem sem vulputate lectus, et suscipit nisi turpis in nibh. Donec egestas ultrices dignissim. Proin rhoncus turpis turpis, eget volutpat sapien ornare ac. Etiam hendrerit, eros vitae eleifend sagittis, libero magna porttitor lectus, eu sagittis orci lacus non libero. Nunc at arcu ullamcorper, aliquam mauris ultricies, fermentum ante.",
-                style: new TextStyle(
-                  fontSize: 18.0, color: Colors.black,
-                ),
-                textAlign: TextAlign.justify,
-              ),
-                        
-                      ],
-                    ),
-                  ),
-                );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -132,35 +107,47 @@ class Creditos extends StatelessWidget {
       drawer: MyDrawer(),
       body: new ListView(
        scrollDirection: Axis.vertical,
+       padding: EdgeInsets.all(10.0),
        children: <Widget>[
 
-          new Container(
-          margin: EdgeInsets.symmetric(vertical:8.0),
-          height: 250,
-          child:
-          ListView(
-            scrollDirection: Axis.horizontal,
-              children: <Widget>[
-                Cosillo1('https://images.vexels.com/media/users/3/152812/isolated/preview/6aef37bbbf00a914ba90fe18f313db7c-ilustraci--n-de-edificio-de-escuela-primaria-by-vexels.png', 'Patrocinadores', 'Creditos', context),
-              ],
+         RichText(
+            textAlign: TextAlign.justify,
+            text: TextSpan(
+                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
+          children: [
+            TextSpan(
+                text: "Agradecemos a nuestros asociados, amigos, investigadores, científicos, ambientalistas, empresarios, activistas por el medio ambiente que nos han apoyado en los esfuerzos para lograr concretar este importante proyecto de Separación Ecológica de Residuos, para tener un mejor País.",
+                
+            ),
+          ]
+            ),
           ),
-        ),
 
-         new Container(
-          margin: EdgeInsets.symmetric(vertical:8.0),
-          height: 250,
-          child:
-          ListView(
-            scrollDirection: Axis.horizontal,
-              children: <Widget>[
-
-                Cosillo2('https://images.vexels.com/media/users/3/157496/isolated/preview/9d3481090a8c628b9ae551f6a1b2a12f-icono-del-ordenador-port--til-de-oficina-by-vexels.png', 'Socios Difusion', 'Creditos', context),
-
-              ],
+          RichText(
+            textAlign: TextAlign.justify,
+            text: TextSpan(
+                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
+          children: [
+            TextSpan(
+                text: "Agradecemos el apoyo de asociados, amigos, investigadores, científicos, ambientalistas, empresarios y activistas por el medio ambiente, que unieron esfuerzos con el fin de concretar este esfuerzo para tener un mejor país, mediante el ",
+                
+            ),
+            TextSpan(
+                text: "PROYECTO SER - Separación Ecológica de Residuos: \n",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold
+                )
+                
+            ),
+          ]
+            ),
           ),
-        ),
 
-      Cosillo3('https://pngimage.net/wp-content/uploads/2018/06/gobierno-png-2.png', 'Creadores', 'Creditos', context),
+      
+      Cosillo1('assets/images/patro.gif', 'Patrocinadores', 'Creditos', context),
+      Cosillo2('assets/images/WhatsApp Image 2020-01-10 at 11.34.24 PM.jpeg', 'Socios Difusion', 'Creditos', context),
+      Cosillo3('assets/images/creadores.jpeg', 'Creadores', 'Creditos', context),
+      
 
 
        ],

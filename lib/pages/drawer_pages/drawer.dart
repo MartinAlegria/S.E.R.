@@ -6,6 +6,7 @@ import 'package:ser_1/pages/drawer_pages/tech.dart';
 import 'package:ser_1/pages/drawer_pages/tips.dart';
 import 'package:ser_1/pages/drawer_pages/daño.dart';
 import 'package:ser_1/pages/drawer_pages/creditos.dart';
+import 'package:ser_1/pages/drawer_pages/page.dart';
 
 
 import './organicos.dart';
@@ -19,6 +20,7 @@ import './tech.dart';
 import './avances.dart';
 import './daño.dart';
 import './relleno.dart';
+import './page.dart';
 
 class MyDrawer extends StatelessWidget {
 
@@ -93,7 +95,7 @@ class MyDrawer extends StatelessWidget {
 
             //Fuera del Hogar
             new ListTile(
-              title: new Text("Relleno Sanitario"),
+              title: new Text("Disposición Final de Residuos"),
               leading: new Icon(Icons.delete_sweep),
               onTap: () {
                 Navigator.of(context).pop();
@@ -111,10 +113,20 @@ class MyDrawer extends StatelessWidget {
               }
             ),
 
+            //CAPACITACIÓN A INSTITUCIONES 
+            new ListTile(
+              title: new Text("Capacitacion a Instituciones"),
+              leading: new Icon(Icons.landscape),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Page()));
+              }
+            ),
+
 
             //Tecnologias para Tratamiento
             new ListTile(
-              title: new Text("Aprovechando la Basura"),
+              title: new Text("Aprovechamiento de Residuos"),
               leading: new Icon(Icons.restore_from_trash),
               onTap: () {
                 Navigator.of(context).pop();
@@ -152,7 +164,6 @@ class MyDrawer extends StatelessWidget {
                 Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Creditos()));
               }
             ),
-
 
             new Divider(),
           ],

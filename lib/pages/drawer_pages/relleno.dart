@@ -17,7 +17,7 @@ class Relleno extends StatelessWidget {
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        new Center(child:  Image.network(image, height: 150, width: 150),)
+                        new Center(child:  Image.asset(image, height: 150, width: 150),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
                           subtitle: new Center(child: Text(subhead)),
@@ -30,7 +30,6 @@ class Relleno extends StatelessWidget {
         ,                        
         onTap: () {                          
         
-        Navigator.of(context).pop();
         Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new TiraderoCielo()));
         
         },                      
@@ -49,7 +48,7 @@ class Relleno extends StatelessWidget {
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        new Center(child:  Image.network(image, height: 150, width: 150),)
+                        new Center(child:  Image.asset(image, height: 150, width: 150),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
                           subtitle: new Center(child: Text(subhead)),
@@ -62,7 +61,6 @@ class Relleno extends StatelessWidget {
         ,                        
         onTap: () {                          
         
-        Navigator.of(context).pop();
         Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new TiraderoControlado()));
         
         },                      
@@ -81,7 +79,7 @@ class Relleno extends StatelessWidget {
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        new Center(child:  Image.network(image, height: 150, width: 150),)
+                        new Center(child:  Image.asset(image, height: 150, width: 150),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
                           subtitle: new Center(child: Text(subhead)),
@@ -94,7 +92,6 @@ class Relleno extends StatelessWidget {
         ,                        
         onTap: () {                          
         
-        Navigator.of(context).pop();
         Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new RellenoNorma()));
         
         },                      
@@ -102,65 +99,43 @@ class Relleno extends StatelessWidget {
     );
   }
 
-  
-  
-
-    Container TextoCosillo(){
-    return  Container(
-                  width: 250.0,
-                  child: Card(
-                    child: Wrap(
-                      children: <Widget>[
-                        Text(
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor a tellus et efficitur. In ut tellus suscipit ante rhoncus varius nec vitae sapien. Quisque dictum, mi eget venenatis pharetra, lorem sem vulputate lectus, et suscipit nisi turpis in nibh. Donec egestas ultrices dignissim. Proin rhoncus turpis turpis, eget volutpat sapien ornare ac. Etiam hendrerit, eros vitae eleifend sagittis, libero magna porttitor lectus, eu sagittis orci lacus non libero. Nunc at arcu ullamcorper, aliquam mauris ultricies, fermentum ante.",
-                style: new TextStyle(
-                  fontSize: 18.0, color: Colors.black,
-                ),
-                textAlign: TextAlign.justify,
-              ),
-                        
-                      ],
-                    ),
-                  ),
-                );
+  Container Titulos(String titulo, double size){
+    return Container(
+            margin: EdgeInsets.symmetric(vertical:12.0),
+            child: Text(titulo,
+            style: TextStyle(fontWeight: FontWeight.bold,
+              fontSize: size
+            ),
+            textAlign: TextAlign.center,
+            ),
+          );
   }
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Relleno Sanitario"), backgroundColor:Color(0XFF018700), centerTitle: true),
+      appBar: new AppBar(title: new Text("DISPOSICIÓN FINAL DE RESIDUOS"), backgroundColor:Color(0XFF018700), centerTitle: true),
       drawer: MyDrawer(),
       body: new ListView(
        scrollDirection: Axis.vertical,
+       padding: EdgeInsets.all(10.0),
        children: <Widget>[
 
-          new Container(
-          margin: EdgeInsets.symmetric(vertical:8.0),
-          height: 250,
-          child:
-          ListView(
-            scrollDirection: Axis.horizontal,
-              children: <Widget>[
-                Cosillo1('https://www.elsoldetoluca.com.mx/local/5hii9y-basura.png/ALTERNATES/LANDSCAPE_400/basura.png', 'Tiradero a Cielo Abierto', 'Relleno Sanitario', context),
-              ],
+          RichText(
+            textAlign: TextAlign.justify,
+            text: TextSpan(
+                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
+          children: [
+            TextSpan(
+                text: "A los lugares en donde los municipios y algunas empresas privadas van a depositar sus residuos se les llama SITIOS DE DISPOSICIÓN FINAL y hay tres tipos: TIRADEROS A CIELO ABIERTO, TIRADERO CONTROLADO y RELLENO BAJO NORMA.",
+            ),
+          ]
+            ),
           ),
-        ),
 
-         new Container(
-          margin: EdgeInsets.symmetric(vertical:8.0),
-          height: 250,
-          child:
-          ListView(
-            scrollDirection: Axis.horizontal,
-              children: <Widget>[
-
-                Cosillo2('https://jjrosales.com/wp-content/uploads/2019/08/suspendida.jpg', 'Tiradero Controlado','Relleno Sanitario', context),
-
-              ],
-          ),
-        ),
-
-      Cosillo3('https://image.freepik.com/vector-gratis/icono-contrato-contrato-papel-firmado_44703-59.jpg', 'Relleno Bajo Norma', 'Relleno Sanitario', context),
+      Cosillo1('assets/images/ca.png', 'Tiradero a Cielo Abierto', 'Relleno Sanitario', context),
+      Cosillo2('assets/images/tiradero.jpeg', 'Tiradero Controlado','Relleno Sanitario', context),
+      Cosillo3('assets/images/bajo.jpg', 'Relleno Bajo Norma', 'Relleno Sanitario', context),
 
 
        ],

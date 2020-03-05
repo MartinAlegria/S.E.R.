@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:ser_1/pages/drawer_pages/inorganicos.dart';
 import './drawer.dart';
 import 'package:ser_1/pages/drawer_pages/sub_pages/daños.dart';
 
 
 class Dano extends StatelessWidget {
 
-  Center CosilloAgua(String image, String heading, String subhead, BuildContext context, ){
+  Center OrganicosCard(String image, String heading, String subhead, BuildContext context, ){
     return  Center(
       child: 
        InkWell(                        
@@ -16,7 +17,8 @@ class Dano extends StatelessWidget {
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        new Center(child:  Image.network(image, height: 150, width: 150),)
+                        new Center(child: Image.asset(image, height: 150, width: 150)
+                        )
                         ,ListTile(
                           title: new Center(child: Text(heading)),
                           subtitle: new Center(child: Text(subhead)),
@@ -29,16 +31,14 @@ class Dano extends StatelessWidget {
         ,                        
         onTap: () {                          
         
-        Navigator.of(context).pop();
-        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Agua_Dano()));
+        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Orgs()));
         
         },                      
      )
     );
   }
 
-
-  Center CosilloTierra(String image, String heading, String subhead, BuildContext context, ){
+  Center AireCard(String image, String heading, String subhead, BuildContext context, ){
     return  Center(
       child: 
        InkWell(                        
@@ -49,7 +49,7 @@ class Dano extends StatelessWidget {
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        new Center(child:  Image.network(image, height: 150, width: 150),)
+                        new Center(child:  Image.asset(image, height: 150, width: 150),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
                           subtitle: new Center(child: Text(subhead)),
@@ -62,15 +62,14 @@ class Dano extends StatelessWidget {
         ,                        
         onTap: () {                          
         
-        Navigator.of(context).pop();
-        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Tierra_Dano()));
+        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Aire()));
         
         },                      
      )
     );
   }
 
- Center CosilloAire(String image, String heading, String subhead, BuildContext context, ){
+ Center InorgCard(String image, String heading, String subhead, BuildContext context, ){
     return  Center(
       child: 
        InkWell(                        
@@ -81,7 +80,7 @@ class Dano extends StatelessWidget {
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        new Center(child:  Image.network(image, height: 150, width: 150),)
+                        new Center(child:  Image.asset(image, height: 150, width: 150),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
                           subtitle: new Center(child: Text(subhead)),
@@ -94,36 +93,76 @@ class Dano extends StatelessWidget {
         ,                        
         onTap: () {                          
         
-        Navigator.of(context).pop();
-        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Aire_Dano()));
+        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Inorgs()));
         
         },                      
      )
     );
   }
 
-  
-  
+ Center AguaCard(String image, String heading, String subhead, BuildContext context, ){
+    return  Center(
+      child: 
+       InkWell(                        
+        child: 
 
-    Container TextoCosillo(){
-    return  Container(
-                  width: 250.0,
+          Container(
+                  width: 400.0,
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        Text(
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor a tellus et efficitur. In ut tellus suscipit ante rhoncus varius nec vitae sapien. Quisque dictum, mi eget venenatis pharetra, lorem sem vulputate lectus, et suscipit nisi turpis in nibh. Donec egestas ultrices dignissim. Proin rhoncus turpis turpis, eget volutpat sapien ornare ac. Etiam hendrerit, eros vitae eleifend sagittis, libero magna porttitor lectus, eu sagittis orci lacus non libero. Nunc at arcu ullamcorper, aliquam mauris ultricies, fermentum ante.",
-                style: new TextStyle(
-                  fontSize: 18.0, color: Colors.black,
-                ),
-                textAlign: TextAlign.justify,
-              ),
-                        
+                        new Center(child:  Image.asset(image, height: 150, width: 150),)
+                        ,ListTile(
+                          title: new Center(child: Text(heading)),
+                          subtitle: new Center(child: Text(subhead)),
+                        )
                       ],
                     ),
                   ),
-                );
+                )
+        
+        ,                        
+        onTap: () {                          
+        
+        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Agua()));
+        
+        },                      
+     )
+    );
   }
+
+ Center SueloCard(String image, String heading, String subhead, BuildContext context, ){
+    return  Center(
+      child: 
+       InkWell(                        
+        child: 
+
+          Container(
+                  width: 400.0,
+                  child: Card(
+                    child: Wrap(
+                      children: <Widget>[
+                        new Center(child:  Image.asset(image, height: 150, width: 150),)
+                        ,ListTile(
+                          title: new Center(child: Text(heading)),
+                          subtitle: new Center(child: Text(subhead)),
+                        )
+                      ],
+                    ),
+                  ),
+                )
+        
+        ,                        
+        onTap: () {                          
+        
+        Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Suelos()));
+        
+        },                      
+     )
+    );
+  }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -134,34 +173,15 @@ class Dano extends StatelessWidget {
        scrollDirection: Axis.vertical,
        children: <Widget>[
 
-          new Container(
-          margin: EdgeInsets.symmetric(vertical:8.0),
-          height: 250,
-          child:
-          ListView(
-            scrollDirection: Axis.horizontal,
-              children: <Widget>[
-                CosilloAire('https://www.sccpre.cat/mypng/detail/247-2474461_wind-clipart-png-flujo-de-aire-png.png', 'Aire', 'Daño', context),
-              ],
-          ),
-        ),
+      OrganicosCard('assets/images/trash.png', 'RESIDUOS ORGÁNICOS', 'Por si mismos', context),
 
-         new Container(
-          margin: EdgeInsets.symmetric(vertical:8.0),
-          height: 250,
-          child:
-          ListView(
-            scrollDirection: Axis.horizontal,
-              children: <Widget>[
+      InorgCard('', 'RESIDUOS INORGÁNICOS ', 'Por si mismos', context),
 
-                CosilloAgua('https://png.pngtree.com/png-clipart/20190117/ourlarge/pngtree-cartoon-wave-spray-summer-surfing-png-image_422801.jpg', 'Agua', 'Daño', context),
+      AireCard('', 'EN EL AIRE', 'Tirar RSU SIN SEPARAR', context),
+      
+      AguaCard("assets/images/water.png", "EN EL AGUA", "Tirar RSU SIN SEPARAR", context),
 
-              ],
-          ),
-        ),
-
-      CosilloTierra('https://cdn.pixabay.com/photo/2016/06/23/20/36/sod-1476141_960_720.png', 'Tierra', 'Daño', context),
-
+      SueloCard("assets/images/soil.png", "EN EL SUELO", "Tirar RSU SIN SEPARAR", context)
 
        ],
       ),
