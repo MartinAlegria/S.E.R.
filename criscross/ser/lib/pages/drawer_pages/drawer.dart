@@ -176,7 +176,7 @@ class MyDrawer extends StatelessWidget {
 
              //Creditos
             new ListTile(
-              title: new Text("Creditos"),
+              title: new Text("Créditos"),
               leading: new Icon(Icons.perm_device_information),
               onTap: () {
                 Navigator.of(context).pop();

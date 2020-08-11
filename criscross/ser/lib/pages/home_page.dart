@@ -190,7 +190,7 @@ class _HomePageState extends State<HomePage> {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "\nLa responsabilidad de separar los residuos es nuestra, primero separemos y",
+                text: "\nPrimero separemos y",
             ),
             TextSpan(
               text: " después exijamos a nuestras autoridades ",

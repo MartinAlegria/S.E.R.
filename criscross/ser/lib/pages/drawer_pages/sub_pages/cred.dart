@@ -128,7 +128,7 @@ class Creadores extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "Martin Alfredo Alegría Jacter.\n",
+                text: "Martin Alfredo Alegría Jacter\n",
                 style: TextStyle(
                   fontWeight: FontWeight.bold
                 )
@@ -145,7 +145,7 @@ class Creadores extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "\nMartin Alfredo Alegría Vizcaya.\n\nCristopher Alan Cejudo Machuca.\n\n",
+                text: "Martin Alfredo Alegría Vizcaya\nCristopher Alan Cejudo Machuca\n",
                 style: TextStyle(
                   fontWeight: FontWeight.bold
                 )
@@ -154,7 +154,24 @@ class Creadores extends StatelessWidget {
             ),
           ),
 
-           RichText(
+          Titulos("COLABORADORES", 18.0),
+
+          RichText(
+            textAlign: TextAlign.justify,
+            text: TextSpan(
+                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
+          children: [
+            TextSpan(
+                text: "Ernesto Santiago Aguirre Cámara\nLuis Raúl Tovar Gálvez\nAlfonso Espitia Cabrera\nCarlos Álvarez Flores\nIrma Cruz Gavilán García\nCuauhtémoc Ramirez Romero\nChristian Omar Armas Mendoza\nJorge Chahin Silhy\nAntonio Villanueva\nRodrigo Cárdenas Zertuche\nFrancisco González Navarrete\nMarisela Guzmán Salvador\nRicardo Pérez Hernández\n\n",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold
+                )
+            ),
+          ]
+            ),
+          ),
+
+          RichText(
             textAlign: TextAlign.justify,
             text: TextSpan(
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),

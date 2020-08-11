@@ -103,7 +103,7 @@ class Creditos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Creditos"), backgroundColor:Color(0XFF018700), centerTitle: true),
+      appBar: new AppBar(title: new Text("Créditos"), backgroundColor:Color(0XFF018700), centerTitle: true),
       drawer: MyDrawer(),
       body: new ListView(
        scrollDirection: Axis.vertical,
@@ -144,9 +144,9 @@ class Creditos extends StatelessWidget {
           ),
 
       
-      Cosillo1('assets/images/patro.gif', 'Patrocinadores', 'Creditos', context),
-      Cosillo2('assets/images/socios_difusion.jpeg', 'Socios Difusion', 'Creditos', context),
-      Cosillo3('assets/images/creadores.jpeg', 'Creadores', 'Creditos', context),
+      Cosillo1('assets/images/patro.gif', 'Patrocinadores', '', context),
+      Cosillo2('assets/images/socios_difusion.jpeg', 'Socios Difusion', '', context),
+      Cosillo3('assets/images/creadores.jpeg', 'Créditos', '', context),
       
 
 
