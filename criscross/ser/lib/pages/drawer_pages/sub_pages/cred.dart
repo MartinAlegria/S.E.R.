@@ -74,11 +74,10 @@ class Socios extends StatelessWidget {
 
           Titulos("SOCIOS EN DIFUSIÓN", 18.0),
 
-          Image.asset("assets/images/grupoMISA.jpg"),
-          Image.asset("assets/images/GreenSoil.jpg"),
-          Image.asset("assets/images/Logo_biosustenta.png"),
-          Image.asset("assets/images/CINBIO_TECH.jpeg"),
-          Image.asset("assets/images/IRMA.jpg"),
+          Image.asset("assets/images/socios_difusion_1.jpg"),
+          Image.asset("assets/images/socios_difusion_2.jpg"),
+          Image.asset("assets/images/socios_difusion_3.jpg"),
+          Image.asset("assets/images/socios_difusion_4.jpg"),
           
 
         ],

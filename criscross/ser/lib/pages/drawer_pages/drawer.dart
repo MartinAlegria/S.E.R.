@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ser_1/pages/drawer_pages/fuera.dart';
 import 'package:ser_1/pages/drawer_pages/infecciosos.dart';
 import 'package:ser_1/pages/drawer_pages/inorganicos.dart';
+import 'package:ser_1/pages/drawer_pages/agua.dart';
 import 'package:ser_1/pages/drawer_pages/no_separar.dart';
 import 'package:ser_1/pages/drawer_pages/tech.dart';
 import 'package:ser_1/pages/drawer_pages/tips.dart';
@@ -31,8 +32,8 @@ class MyDrawer extends StatelessWidget {
         child: new ListView(
           children: <Widget>[
             new UserAccountsDrawerHeader(
-              accountName: new Text("PROYECTO S.E.R.",),
-              accountEmail: new Text("Separacion Ecologica de Residuos"),
+              accountName: new Text("",),
+              accountEmail: new Text(""),
               decoration: new BoxDecoration(
                 image: new DecorationImage(
                   image: AssetImage("cibruc.png"),
@@ -139,7 +140,7 @@ class MyDrawer extends StatelessWidget {
               leading: new Icon(Icons.opacity),
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Capacitacion()));
+                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Agua()));
               }
             ),
 

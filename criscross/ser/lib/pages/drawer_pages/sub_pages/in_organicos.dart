@@ -183,7 +183,7 @@ class GuiaInorg extends StatelessWidget {
           icon: new Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.of(context).pop();
-            Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Organicos()));} 
+            Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Inorganicos()));} 
           )),
       body: ListView(
         scrollDirection: Axis.vertical,
@@ -242,7 +242,7 @@ class CuidadosInorg extends StatelessWidget {
           icon: new Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.of(context).pop();
-            Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Organicos()));} 
+            Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Inorganicos()));} 
           )),
       body: ListView(
         scrollDirection: Axis.vertical,

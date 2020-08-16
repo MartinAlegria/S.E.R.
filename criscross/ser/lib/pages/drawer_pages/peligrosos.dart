@@ -134,7 +134,7 @@ class Peligrosos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Residuos Especiales"), backgroundColor:Color(0XFF018700), centerTitle: true),
+      appBar: new AppBar(title: new Text("Manejo Especial"), backgroundColor:Color(0XFF018700), centerTitle: true),
       drawer: MyDrawer(),
       body: new ListView(
        scrollDirection: Axis.vertical,

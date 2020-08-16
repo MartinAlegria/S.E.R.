@@ -33,7 +33,7 @@ class Infecciosos extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "Deben MANEJARSE CON MUCHO CUIDADO para que no se propaguen infecciones. \n\nEs importante concientizar a todas las personas cercanas de que es un PELIGRO BIOLÓGICO INFECCIOSO para que ellos también lo manejen con cuidado.\n\nEs muy importante ROTULAR CON LETRAS GRANDES Y VISIBLES qué se trata de RESIDUOS BIOLÓGICO INFECCIOSOS y hacerlo saber al recolector cuando se entregue.",
+                text: "Deben MANEJARSE CON MUCHO CUIDADO para que no se propaguen infecciones. \n\nEs importante concientizar a todas las personas cercanas de que es un PELIGRO BIOLÓGICO INFECCIOSO para que ellos también lo manejen con cuidado.\n\nDebes colocar los residuos en una bolsa biodegradable y cerrarla correctamente, es muy importante ROTULAR CON LETRAS GRANDES Y VISIBLES que se trata de RESIDUOS BIOLÓGICO INFECCIOSOS y hacerlo saber al recolector cuando se entregue.",
             ),
           ]
             ),

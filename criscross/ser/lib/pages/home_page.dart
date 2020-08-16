@@ -190,16 +190,10 @@ class _HomePageState extends State<HomePage> {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "\nPrimero separemos y",
-            ),
-            TextSpan(
-              text: " después exijamos a nuestras autoridades ",
+              text: "\nNecesitamos crear una economía circular local, aprovechemos los residuos y ganemos dinero",
               style: TextStyle(
                 fontWeight: FontWeight.bold 
               )
-            ),
-            TextSpan(
-                text: "que le den un tratamiento integral a nuestros RSU separados.",
             ),
             
           ]
