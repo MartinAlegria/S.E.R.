@@ -114,7 +114,7 @@ class _HomePageState extends State<HomePage> {
             ),
 
             TextSpan(
-              text: "\n\nNaranja: Residuos inorgánicos NO reciclables ",
+              text: "\n\nNaranja: Residuos inorgánicos NO reciclables\n",
               style: TextStyle(
                 color: Colors.orange,
                 fontWeight: FontWeight.bold 
@@ -123,6 +123,8 @@ class _HomePageState extends State<HomePage> {
           ]
             ),
           ),
+
+          Image.asset("assets/images/banner_cibruc.gif"),
 
           RichText(
             textAlign: TextAlign.justify,

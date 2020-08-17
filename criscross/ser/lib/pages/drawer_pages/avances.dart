@@ -51,7 +51,7 @@ class Avances extends StatelessWidget {
 
          
 
-          Image.asset("assets/images/Banner CIBRUC Animado.gif")
+          Image.asset("assets/images/banner_cibruc.gif")
 
 
         ],
