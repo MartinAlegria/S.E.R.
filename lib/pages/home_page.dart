@@ -48,7 +48,18 @@ class _HomePageState extends State<HomePage> {
               )
             ),
              TextSpan(
-                text: "[Súper Separador(a) Ecológico(a) de Residuos] y valoramos tu interés para informarte sobre lo que puedes hacer en tu hogar para tener un medioambiente más limpio y sano.\n\nAntes de empezar, es importante que sepas que todo lo que comúnmente conocemos como ",
+                text: "[Súper Separador(a) Ecológico(a) de Residuos] y valoramos tu interés para informarte sobre lo que puedes hacer en tu hogar para tener un medioambiente más limpio y sano.",
+            )]
+          ),
+          ),
+
+          RichText(
+            textAlign: TextAlign.justify,
+            text: TextSpan(
+                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
+            children: [
+            TextSpan(
+                text: "\nAntes de empezar, es importante que sepas que todo lo que comúnmente conocemos como ",
             ),
             TextSpan(
               text: "BASURA",
@@ -76,7 +87,7 @@ class _HomePageState extends State<HomePage> {
             ),
             TextSpan(
                 text: "se separan en tres tipos de contenedores de basura que tienen diferente color, según lo que se depositará en ellos:",
-            ),
+            )
           ]
             ),
           ),
@@ -103,7 +114,7 @@ class _HomePageState extends State<HomePage> {
             ),
 
             TextSpan(
-              text: "\n\nNaranja: Residuos inorgánicos NO reciclables ",
+              text: "\n\nNaranja: Residuos inorgánicos NO reciclables\n",
               style: TextStyle(
                 color: Colors.orange,
                 fontWeight: FontWeight.bold 
@@ -112,6 +123,8 @@ class _HomePageState extends State<HomePage> {
           ]
             ),
           ),
+
+          Image.asset("assets/images/banner_cibruc.gif"),
 
           RichText(
             textAlign: TextAlign.justify,
@@ -142,14 +155,14 @@ class _HomePageState extends State<HomePage> {
           ]
             ),
           ),
-           Image.asset("assets/images/Contaminacion Mares Animado.gif"),
+           
               RichText(
             textAlign: TextAlign.justify,
             text: TextSpan(
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "\nEs muy importante tomar en cuenta que, ",
+                text: "Es muy importante tomar en cuenta que, ",
             ),
             TextSpan(
               text: "para exigir a nuestras autoridades ",
@@ -173,36 +186,37 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
 
-
-
-
-
           RichText(
             textAlign: TextAlign.justify,
             text: TextSpan(
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "\nLa responsabilidad de separar los residuos es nuestra, primero separemos y",
-            ),
-            TextSpan(
-              text: " después exijamos a nuestras autoridades ",
+              text: "\nNecesitamos crear una economía circular local, aprovechemos los residuos y ganemos dinero",
               style: TextStyle(
-                fontWeight: FontWeight.bold 
-              )
-            ),
-            TextSpan(
-                text: "que le den un tratamiento integral a nuestros RSU separados.",
-            ),
-            TextSpan(
-                text: "\n\nEducar para no contaminar",
-                style: TextStyle(
                 fontWeight: FontWeight.bold 
               )
             ),
             
           ]
             ),
+          ),
+
+          RichText(
+            textAlign: TextAlign.center,
+            text:TextSpan(
+                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 15.0),
+            children: [
+                TextSpan(
+                  text: "\nEducar para no contaminar\n",
+                  style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold 
+                )
+              )
+            ]
+            )
           ),
 
           RichText(
@@ -213,6 +227,8 @@ class _HomePageState extends State<HomePage> {
             TextSpan(
                 text: "www.cibruc.org \nwww.facebook.com/faceCibruc\ncontacto@cibruc.org\n",
                 style: TextStyle(
+                color: Colors.blueAccent,
+                decoration: TextDecoration.underline,
                 fontWeight: FontWeight.bold 
               )
             ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ser_1/pages/drawer_pages/organicos.dart';
 import 'package:ser_1/pages/drawer_pages/inorganicos.dart';
-import 'package:ser_1/pages/drawer_pages/page.dart';
-import 'package:ser_1/pages/drawer_pages/page.dart' as prefix0;
+import 'package:ser_1/pages/drawer_pages/capacitacion.dart';
+import 'package:ser_1/pages/drawer_pages/capacitacion.dart' as prefix0;
 
 Container Titulos(String titulo, double size){
     return Container(
@@ -152,7 +152,7 @@ class CuidadosOrg extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.info),
-            title: Text("Asegurarse de colocar una BOLSA SIN AGUJEROS, ya que este tipo de residuos produce escurrimientos."),
+            title: Text("Asegurarse de colocar una BOLSA BIODEGRADABLE SIN AGUJEROS, ya que este tipo de residuos produce escurrimientos."),
           ),
           ListTile(
             leading: Icon(Icons.info),
@@ -183,7 +183,7 @@ class GuiaInorg extends StatelessWidget {
           icon: new Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.of(context).pop();
-            Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Organicos()));} 
+            Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Inorganicos()));} 
           )),
       body: ListView(
         scrollDirection: Axis.vertical,
@@ -242,7 +242,7 @@ class CuidadosInorg extends StatelessWidget {
           icon: new Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.of(context).pop();
-            Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Organicos()));} 
+            Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Inorganicos()));} 
           )),
       body: ListView(
         scrollDirection: Axis.vertical,

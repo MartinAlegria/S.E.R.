@@ -40,7 +40,7 @@ class Escuelas extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.info),
-            title: Text("Iniciar un proyecto de sustitución de plásticos por materiales reciclables (cartón, papel, bambú, etcétera). "),
+            title: Text("Iniciar un proyecto de sustitución por materiales reciclables (cartón, papel, bambú, etcétera). "),
           ),
           ListTile(
             leading: Icon(Icons.info),
@@ -111,11 +111,11 @@ class Oficinas extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.info),
-            title: Text("3.	Crear un PROGRAMA DE SEPARACIÓN ECOLÓGICA DE RESIDUOS que incluya reuniones ejecutivas para todo el personal, en las que se brinde la información sobre su importancia, además de solicitar que no mezclen los residuos. Este programa debe incluir la entrega de contenedores de basura con sus respectivos colores y la instrucción de rotular las bolsas de los residuos, así como pedir a los recolectores de basura que no los mezclen."),
+            title: Text("Crear un PROGRAMA DE SEPARACIÓN ECOLÓGICA DE RESIDUOS que incluya reuniones ejecutivas para todo el personal, en las que se brinde la información sobre su importancia, además de solicitar que no mezclen los residuos. Este programa debe incluir la entrega de contenedores de basura con sus respectivos colores y la instrucción de rotular las bolsas biodegradables de los residuos, así como pedir a los recolectores de basura que no los mezclen."),
           ),
           ListTile(
             leading: Icon(Icons.info),
-            title: Text("4.	Crear un PROGRAMA DE ACOPIO DE INORGÁNICOS RECICLABLES cuya meta sea juntar limpios y separados todos los residuos que se pueden reusar para entregarlos a los recolectores, a las asociaciones civiles o venderlos a los recicladores."),
+            title: Text("Crear un PROGRAMA DE ACOPIO DE INORGÁNICOS RECICLABLES cuya meta sea juntar limpios y separados todos los residuos que se pueden reusar para entregarlos a los recolectores, a las asociaciones civiles o venderlos a los recicladores."),
           ),
           ListTile(
             leading: Icon(Icons.info),
@@ -159,7 +159,7 @@ class InstGob extends StatelessWidget {
           Titulos("INSTITUCIONES GUBERNAMENTALES", 18.0),
           ListTile(
             leading: Icon(Icons.info),
-            title: Text("Crear un PROGRAMA DE SEPARACIÓN ECOLÓGICA DE RESIDUOS que incluya reuniones ejecutivas para todo el personal, en las que se brinde la información sobre su importancia, además de solicitar que no mezclen los residuos. Este programa debe incluir la entrega de contenedores de RSU con sus respectivos colores y la instrucción de rotular las bolsas de los residuos, así como pedir a los recolectores que no los mezclen."),
+            title: Text("Crear un PROGRAMA DE SEPARACIÓN ECOLÓGICA DE RESIDUOS que incluya reuniones ejecutivas para todo el personal, en las que se brinde la información sobre su importancia, además de solicitar que no mezclen los residuos. Este programa debe incluir la entrega de contenedores de RSU con sus respectivos colores y la instrucción de rotular las bolsas biodegradables de los residuos, así como pedir a los recolectores que no los mezclen."),
           ),
           ListTile(
             leading: Icon(Icons.info),

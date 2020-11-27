@@ -103,7 +103,7 @@ class Creditos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Creditos"), backgroundColor:Color(0XFF018700), centerTitle: true),
+      appBar: new AppBar(title: new Text("Créditos"), backgroundColor:Color(0XFF018700), centerTitle: true),
       drawer: MyDrawer(),
       body: new ListView(
        scrollDirection: Axis.vertical,
@@ -122,31 +122,10 @@ class Creditos extends StatelessWidget {
           ]
             ),
           ),
-
-          RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "Agradecemos el apoyo de asociados, amigos, investigadores, científicos, ambientalistas, empresarios y activistas por el medio ambiente, que unieron esfuerzos con el fin de concretar este esfuerzo para tener un mejor país, mediante el ",
-                
-            ),
-            TextSpan(
-                text: "PROYECTO SER - Separación Ecológica de Residuos: \n",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold
-                )
-                
-            ),
-          ]
-            ),
-          ),
-
       
-      Cosillo1('assets/images/patro.gif', 'Patrocinadores', 'Creditos', context),
-      Cosillo2('assets/images/WhatsApp Image 2020-01-10 at 11.34.24 PM.jpeg', 'Socios Difusion', 'Creditos', context),
-      Cosillo3('assets/images/creadores.jpeg', 'Creadores', 'Creditos', context),
+      Cosillo1('assets/images/patro.gif', 'Patrocinadores', '', context),
+      Cosillo2('assets/images/socios_difusion.jpeg', 'Socios Difusion', '', context),
+      Cosillo3('assets/images/creadores.jpeg', 'Créditos', '', context),
       
 
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './drawer.dart';
+import 'drawer.dart';
 
  Container Titulos(String titulo, double size){
     return Container(
@@ -13,7 +13,7 @@ import './drawer.dart';
           );
   }
 
-class Page extends StatelessWidget {
+class Capacitacion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +27,6 @@ class Page extends StatelessWidget {
 
           Titulos("Capacitacion a Instituciones", 18.0),
 
-          //Image.asset("assets/images/Banner CIBRUC Animado.gif"),
-
           RichText(
             textAlign: TextAlign.justify,
             text: TextSpan(
@@ -40,7 +38,7 @@ class Page extends StatelessWidget {
           ]
             ),
           ),
-          Image.asset("assets/images/Banner CIBRUC Animado.gif"),
+          Image.asset("assets/images/capacitacion.gif"),
 
           RichText(
             textAlign: TextAlign.justify,

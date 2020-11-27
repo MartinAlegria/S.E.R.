@@ -32,6 +32,7 @@ class Patrocinadores extends StatelessWidget {
         children: <Widget>[
 
           Titulos("PATROCINADORES", 18.0),
+          Image.asset("assets/images/huasteca.jpg"),
 
           RichText(
             textAlign: TextAlign.justify,
@@ -39,7 +40,7 @@ class Patrocinadores extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "Si te interesa colaborar con CIBRUC en estos esfuerzos por llegar a tener Municipios, Ciudades, Comunidades, Estados y un País sin residuos en barrancas, lagunas, ríos y mares.\n\nContactanos al correo:  patrocinador@cibruc.org  \n\nTodo donativo es bienvenido para continuar este titánico esfuerzo.",
+                text: "\nSi te interesa colaborar con CIBRUC en estos esfuerzos por llegar a tener Municipios, Ciudades, Comunidades, Estados y un País sin residuos en barrancas, lagunas, ríos y mares.\n\nContactanos al correo:  patrocinador@cibruc.org  \n\nTodo donativo es bienvenido para continuar este titánico esfuerzo.",
             ),
           ]
             ),
@@ -74,152 +75,11 @@ class Socios extends StatelessWidget {
 
           Titulos("SOCIOS EN DIFUSIÓN", 18.0),
 
-          RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "Agradecemos a los institutos de Educación el apoyo en la Difusión.\n",
-            ),
-          ]
-            ),
-          ),
-
-          RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "+ IPN     + UAM     + UNAM     + Tec de Monterrey Campus Santa Fe \n\n",
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontWeight: FontWeight.bold
-                )
-            ),
-          ]
-            ),
-          ),
-
-
-          RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "Agradecemos a las autoridades de los Estados su apoyo en la Difusión.\n",
-            ),
-          ]
-            ),
-          ),
-
-          RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "+ Nuevo León     + San Luis Potosí      + Baja California     + Michoacan \n\n",
-                style: TextStyle(
-                  color: Colors.green,
-                  fontWeight: FontWeight.bold
-                )
-            ),
-          ]
-            ),
-          ),
-
-
-          RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "Agradecemos a los Municipios en el apoyo a la Difusión.\n",
-            ),
-          ]
-            ),
-          ),
-
-
-           RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "+ Monterrey      + Rio Verde, SLP     + Maravatio \n\n",
-                style: TextStyle(
-                  color: Colors.brown,
-                  fontWeight: FontWeight.bold
-                )
-            ),
-          ]
-            ),
-          ),
-
-
-          RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "Agradecemos a las Empresas.\n",
-            ),
-          ]
-            ),
-          ),
-
-
-          RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "+ Grupo GDI     + Tecmed de México      + Grupo Misa \n\n",
-                style: TextStyle(
-                  color: Colors.purple,
-                  fontWeight: FontWeight.bold
-                )
-            ),
-          ]
-            ),
-          ),
-
-          RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "Agradecemos a las asociaciones civiles por su apoyo a la Difusión.\n",
-            ),
-          ]
-            ),
-          ),
-
-
-          RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "+ México Comunicación y ambiente     + Cinbios      + Sadri \n\n",
-                style: TextStyle(
-                  color: Colors.red,
-                  fontWeight: FontWeight.bold
-                )
-            ),
-          ]
-            ),
-          ),
-
+          Image.asset("assets/images/socios_difusion_1.jpg"),
+          Image.asset("assets/images/socios_difusion_2.jpg"),
+          Image.asset("assets/images/socios_difusion_3.jpg"),
+          Image.asset("assets/images/socios_difusion_4.jpg"),
+          
 
         ],
 
@@ -235,7 +95,7 @@ class Creadores extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Creadores"),
+      appBar: new AppBar(title: new Text("Créditos"),
       backgroundColor:Color(0XFF018700),
         leading: new IconButton(
           icon: new Icon(Icons.arrow_back),
@@ -256,7 +116,7 @@ class Creadores extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "Esta aplicación es propiedad registrada y creada por:\n\n",
+                text: "Esta aplicación es propiedad registrada y creada por:\n",
             ),
           ]
             ),
@@ -268,7 +128,41 @@ class Creadores extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "Martin Alfredo Alegría Jacter.\n\n",
+                text: "Martin Alfredo Alegría Jacter\n",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold
+                )
+            ),
+          ]
+            ),
+          ),
+
+          Titulos("DESARROLLADORES", 18.0),
+
+          RichText(
+            textAlign: TextAlign.justify,
+            text: TextSpan(
+                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
+          children: [
+            TextSpan(
+                text: "Martin Alfredo Alegría Vizcaya\nCristopher Alan Cejudo Machuca\n",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold
+                )
+            ),
+          ]
+            ),
+          ),
+
+          Titulos("COLABORADORES", 18.0),
+
+          RichText(
+            textAlign: TextAlign.justify,
+            text: TextSpan(
+                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
+          children: [
+            TextSpan(
+                text: "Ernesto Santiago Aguirre Cámara\nLuis Raúl Tovar Gálvez\nAlfonso Espitia Cabrera\nCarlos Álvarez Flores\nIrma Cruz Gavilán García\nCuauhtémoc Ramirez Romero\nChristian Omar Armas Mendoza\nJorge Chahin Silhy\nAntonio Villanueva Villanueva\nRodrigo Cárdenas Zertuche\nFrancisco González Navarrete\nMarisela Guzmán Salvador\nRicardo Pérez Hernández\n\nJosé Jaime Maussan Flota\n\nSebastián Amigo Maussan Evangelista",
                 style: TextStyle(
                   fontWeight: FontWeight.bold
                 )
@@ -278,27 +172,19 @@ class Creadores extends StatelessWidget {
           ),
 
           RichText(
-            textAlign: TextAlign.justify,
-            text: TextSpan(
-                style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
-          children: [
-            TextSpan(
-                text: "Martin Alfredo Alegría Vizcaya.\n\n",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold
-                )
-            ),
-          ]
-            ),
-          ),
-
-           RichText(
             textAlign: TextAlign.justify,
             text: TextSpan(
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
                 text: "CIBRUC tiene el permiso legal para su uso sin fines comerciales.\n\n",
+            ),
+            TextSpan(
+                text: "imagenes freepik.com \n",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold
+                )
+                
             ),
           ]
             ),

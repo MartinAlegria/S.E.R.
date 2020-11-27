@@ -134,7 +134,7 @@ class Peligrosos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Residuos Especiales"), backgroundColor:Color(0XFF018700), centerTitle: true),
+      appBar: new AppBar(title: new Text("Manejo Especial"), backgroundColor:Color(0XFF018700), centerTitle: true),
       drawer: MyDrawer(),
       body: new ListView(
        scrollDirection: Axis.vertical,
@@ -146,16 +146,14 @@ class Peligrosos extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "\nLos RESIDUOS ESPECIALES deben ser tratados con mucho cuidado ya que representan un peligro para la salud estos pueden ser RESIDUOS ELECTRÓNICOS, RESIDUOS DE MANEJO ESPECIAL, RESIDUOS PELIGROSOS y RESIDUOS BIOLÓGICO INFECCIOSOS\n",
+                text: "\nLos RESIDUOS DE MANEJO ESPECIAL deben ser tratados con mucho cuidado ya que representan un peligro para la salud estos pueden ser RESIDUOS ELECTRÓNICOS, RESIDUOS DE MANEJO ESPECIAL, RESIDUOS PELIGROSOS y RESIDUOS BIOLÓGICO INFECCIOSOS\n",
             ),
           ]
             ),
           ),
 
-        Cosillo0('assets/images/WhatsApp Image 2020-01-11 at 12.03.33 AM.jpeg', 'Electronicos', 'Residuos Especiales', context),
-        Cosillo1('assets/images/manejo.jpg', 'Manejo Especial', 'Residuos Especiales', context),
-        Cosillo2('assets/images/peligrosos.jpg', 'Peligrosos','Residuos Especiales', context),
-        Cosillo3('assets/images/infec.png', 'Biologicos Infecciosos', 'Residuos Especiales', context),
+        Cosillo1('assets/images/manejo.jpg', 'Manejo Especial', 'Residuos de Manejo Especial', context),
+        Cosillo2('assets/images/peligrosos.jpg', 'Peligrosos','Residuos de Manejo Especial', context),
 
 
        ],

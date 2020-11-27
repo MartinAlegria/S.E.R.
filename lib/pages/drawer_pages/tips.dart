@@ -38,5 +38,5 @@ class TipsListTile extends ListTile {
 }
 
 List<Tip> allTips = [
-    Tip(name: ' ', descripcion: 'En la medida de lo posible no uses artículos de un solo uso.'),
+    Tip(name: ' ', descripcion: 'Cuando compres bolsas de plástico, haz un esfuerzo porque sean biodegradables. No uses bolsas de papel, ya que se requiere talar árboles para su fabricación'),
 ];

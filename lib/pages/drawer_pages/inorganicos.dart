@@ -19,7 +19,7 @@ class Inorganicos extends StatelessWidget {
                         new Center(child:  Image.asset(image, height: 150, width: 150),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
-                          subtitle: new Center(child: Text(subhead)),
+                          subtitle: new Container(alignment: Alignment.center, child: Text(subhead, style: TextStyle(color: Colors.black))),
                         )
                       ],
                     ),
@@ -50,7 +50,7 @@ class Inorganicos extends StatelessWidget {
                         new Center(child:  Image.asset(image, height: 150, width: 150),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
-                          subtitle: new Center(child: Text(subhead)),
+                          subtitle: new Container(alignment: Alignment.center, child: Text(subhead, style: TextStyle(color: Colors.black))),
                         )
                       ],
                     ),

@@ -38,7 +38,7 @@ class Dano extends StatelessWidget {
     );
   }
 
-  Center AireCard(String image, String heading, String subhead, BuildContext context, ){
+ Center AireCard(String image, String heading, String subhead, BuildContext context, ){
     return  Center(
       child: 
        InkWell(                        
@@ -49,7 +49,7 @@ class Dano extends StatelessWidget {
                   child: Card(
                     child: Wrap(
                       children: <Widget>[
-                        new Center(child:  Image.asset(image, height: 150, width: 150),)
+                        new Center(child:  Image.asset(image, height: 160, width: 160),)
                         ,ListTile(
                           title: new Center(child: Text(heading)),
                           subtitle: new Center(child: Text(subhead)),
@@ -173,11 +173,11 @@ class Dano extends StatelessWidget {
        scrollDirection: Axis.vertical,
        children: <Widget>[
 
-      OrganicosCard('assets/images/trash.png', 'RESIDUOS ORGÁNICOS', 'Por si mismos', context),
+      OrganicosCard('assets/images/trash.png', 'RESIDUOS ORGÁNICOS', 'Tirar RSU SIN SEPARAR', context),
 
-      InorgCard('', 'RESIDUOS INORGÁNICOS ', 'Por si mismos', context),
+      InorgCard('assets/images/inorganicos.jpg', 'RESIDUOS INORGÁNICOS ', 'Tirar RSU SIN SEPARAR', context),
 
-      AireCard('', 'EN EL AIRE', 'Tirar RSU SIN SEPARAR', context),
+      AireCard('assets/images/aire.jpg', 'EN EL AIRE', 'Tirar RSU SIN SEPARAR', context),
       
       AguaCard("assets/images/water.png", "EN EL AGUA", "Tirar RSU SIN SEPARAR", context),
 

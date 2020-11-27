@@ -30,7 +30,7 @@ class Organicos extends StatelessWidget {
         
         ,                        
         onTap: () {                          
-        
+        Navigator.of(context).pop();
         Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new GuiaOrg()));
         
         },                      
