@@ -32,7 +32,7 @@ class Patrocinadores extends StatelessWidget {
         children: <Widget>[
 
           Titulos("PATROCINADORES", 18.0),
-          Image.asset("assets/images/huasteca.jpg"),
+          Image.asset("assets/images/patrocinadores.jpg"),
 
           RichText(
             textAlign: TextAlign.justify,
@@ -75,12 +75,7 @@ class Socios extends StatelessWidget {
 
           Titulos("SOCIOS EN DIFUSIÓN", 18.0),
 
-          Image.asset("assets/images/socios_difusion_1.jpg"),
-          Image.asset("assets/images/socios_difusion_2.jpg"),
-          Image.asset("assets/images/socios_difusion_3.jpg"),
-          Image.asset("assets/images/socios_difusion_4.jpg"),
-          
-
+          Image.asset("assets/images/socios.jpg"),
         ],
 
       )
@@ -162,7 +157,7 @@ class Creadores extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "Ernesto Santiago Aguirre Cámara\nLuis Raúl Tovar Gálvez\nAlfonso Espitia Cabrera\nCarlos Álvarez Flores\nIrma Cruz Gavilán García\nCuauhtémoc Ramirez Romero\nChristian Omar Armas Mendoza\nJorge Chahin Silhy\nAntonio Villanueva Villanueva\nRodrigo Cárdenas Zertuche\nFrancisco González Navarrete\nMarisela Guzmán Salvador\nRicardo Pérez Hernández\n\nJosé Jaime Maussan Flota\n\nSebastián Amigo Maussan Evangelista",
+                text: "Ernesto Santiago Aguirre Cámara\nLuis Raúl Tovar Gálvez\nAlfonso Espitia Cabrera\nCarlos Álvarez Flores\nIrma Cruz Gavilán García\nCuauhtémoc Ramirez Romero\nChristian Omar Armas Mendoza\nJorge Chahin Silhy\nAntonio Villanueva Villanueva\nRodrigo Cárdenas Zertuche\nFrancisco González Navarrete\nMarisela Guzmán Salvador\nRicardo Pérez Hernández\nJosé Jaime Maussan Flota\nSebastián Amigo Maussan Evangelista",
                 style: TextStyle(
                   fontWeight: FontWeight.bold
                 )
@@ -177,7 +172,7 @@ class Creadores extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "CIBRUC tiene el permiso legal para su uso sin fines comerciales.\n\n",
+                text: "\nCIBRUC tiene el permiso legal para su uso sin fines comerciales.\n\n",
             ),
             TextSpan(
                 text: "imagenes freepik.com \n",

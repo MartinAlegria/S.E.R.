@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ser_1/pages/drawer_pages/economia.dart';
 import 'package:ser_1/pages/drawer_pages/fuera.dart';
 import 'package:ser_1/pages/drawer_pages/infecciosos.dart';
 import 'package:ser_1/pages/drawer_pages/electronicos.dart';
@@ -6,6 +7,7 @@ import 'package:ser_1/pages/drawer_pages/inorganicos.dart';
 import 'package:ser_1/pages/drawer_pages/agua.dart';
 import 'package:ser_1/pages/drawer_pages/no_separar.dart';
 import 'package:ser_1/pages/drawer_pages/tech.dart';
+import 'package:ser_1/pages/drawer_pages/economia.dart';
 import 'package:ser_1/pages/drawer_pages/tips.dart';
 import 'package:ser_1/pages/drawer_pages/daño.dart';
 import 'package:ser_1/pages/drawer_pages/creditos.dart';
@@ -142,6 +144,15 @@ class MyDrawer extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Tech()));
+              }
+            ),
+
+            new ListTile(
+              title: new Text("Economía Circular"),
+              leading: new Icon(Icons.attach_money),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Economia()));
               }
             ),
 

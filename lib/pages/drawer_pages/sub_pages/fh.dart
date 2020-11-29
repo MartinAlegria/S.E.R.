@@ -46,6 +46,10 @@ class Escuelas extends StatelessWidget {
             leading: Icon(Icons.info),
             title: Text("Reutilizar el mayor número de veces los objetos de papel, cartón, plástico, lápices, crayones, hojas, cartulinas, plastilinas. Se recomienda emplear ejercicios de creatividad para cumplir este objetivo."),
           ),
+           ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Ir cambiando en la medida de lo posible todas las bolsas de plástico común por plásticos que sean composteables o biodegradables."),
+          ),
           ListTile(
             leading: Icon(Icons.info),
             title: Text("Reunir todos los residuos inorgánicos reciclables, empaquetarlos y donarlos a asociaciones civiles o a los recolectores o pepenadores."),
@@ -113,6 +117,10 @@ class Oficinas extends StatelessWidget {
             leading: Icon(Icons.info),
             title: Text("Crear un PROGRAMA DE SEPARACIÓN ECOLÓGICA DE RESIDUOS que incluya reuniones ejecutivas para todo el personal, en las que se brinde la información sobre su importancia, además de solicitar que no mezclen los residuos. Este programa debe incluir la entrega de contenedores de basura con sus respectivos colores y la instrucción de rotular las bolsas biodegradables de los residuos, así como pedir a los recolectores de basura que no los mezclen."),
           ),
+           ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Ir cambiando en la medida de lo posible todas las bolsas de plástico común por plásticos que sean composteables o biodegradables."),
+          ),
           ListTile(
             leading: Icon(Icons.info),
             title: Text("Crear un PROGRAMA DE ACOPIO DE INORGÁNICOS RECICLABLES cuya meta sea juntar limpios y separados todos los residuos que se pueden reusar para entregarlos a los recolectores, a las asociaciones civiles o venderlos a los recicladores."),
@@ -156,6 +164,8 @@ class InstGob extends StatelessWidget {
         padding: EdgeInsets.all(10.0),
         children: <Widget>[
 
+          
+
           Titulos("INSTITUCIONES GUBERNAMENTALES", 18.0),
           ListTile(
             leading: Icon(Icons.info),
@@ -168,6 +178,10 @@ class InstGob extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.info),
             title: Text("Crear un PROGRAMA DE ACOPIO DE INORGÁNICOS RECICLABLES cuya meta sea reunir separados y limpios todos los residuos que se pueden reusar para donarlos o entregarlos a los recolectores o a asociaciones civiles."),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Ir cambiando en la medida de lo posible todas las bolsas de plástico común por plásticos que sean composteables o biodegradables."),
           ),
           ListTile(
             leading: Icon(Icons.info),

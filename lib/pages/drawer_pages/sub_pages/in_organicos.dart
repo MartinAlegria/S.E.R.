@@ -144,7 +144,7 @@ class CuidadosOrg extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.info),
-            title: Text("1.	Utilizar un contenedor que sea exclusivo para colocar los residuos orgánicos, de preferencia verde."),
+            title: Text("Utilizar un contenedor que sea exclusivo para colocar los residuos orgánicos, de preferencia verde."),
           ),
           ListTile(
             leading: Icon(Icons.info),
