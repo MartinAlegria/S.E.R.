@@ -175,7 +175,7 @@ class Creadores extends StatelessWidget {
                 text: "\nCIBRUC tiene el permiso legal para su uso sin fines comerciales.\n\n",
             ),
             TextSpan(
-                text: "imagenes freepik.com \n",
+                text: "Imágenes freepik.com \n",
                 style: TextStyle(
                   fontWeight: FontWeight.bold
                 )

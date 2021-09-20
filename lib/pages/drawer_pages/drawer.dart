@@ -48,7 +48,7 @@ class MyDrawer extends StatelessWidget {
 
             // HOME PAGE
             new ListTile( 
-              title: new Text("Pagina Principal"),
+              title: new Text("Página Principal"),
               leading: new Icon(Icons.home), // nature smth, 
               onTap: () {
                 Navigator.of(context).pop();
@@ -68,7 +68,7 @@ class MyDrawer extends StatelessWidget {
 
             // RESIDUOS ORGANICOS
             new ListTile( 
-              title: new Text("Organicos"),
+              title: new Text("Orgánicos"),
               leading: new Icon(Icons.local_florist), // nature smth, 
               onTap: () {
                 Navigator.of(context).pop();
@@ -78,7 +78,7 @@ class MyDrawer extends StatelessWidget {
 
             // RESIDUOS INORGANICOS
             new ListTile(
-              title: new Text("Inorganicos"),
+              title: new Text("Inorgánicos"),
               leading: new Icon(Icons.delete_sweep),
               onTap: () {
                 Navigator.of(context).pop();
@@ -98,7 +98,7 @@ class MyDrawer extends StatelessWidget {
 
             //Electronicos 
             new ListTile(
-              title: new Text("Electronicos"),
+              title: new Text("Electrónicos"),
               leading: new Icon(Icons.power),
               onTap: () {
                 Navigator.of(context).pop();
@@ -129,7 +129,7 @@ class MyDrawer extends StatelessWidget {
 
             //Fuera del Hogar
             new ListTile(
-              title: new Text("Gestion Fuera del Hogar"),
+              title: new Text("Gestión Fuera del Hogar"),
               leading: new Icon(Icons.directions_car),
               onTap: () {
                 Navigator.of(context).pop();
@@ -168,7 +168,7 @@ class MyDrawer extends StatelessWidget {
 
             //CAPACITACIÓN A INSTITUCIONES 
             new ListTile(
-              title: new Text("Capacitacion a Instituciones"),
+              title: new Text("Capacitación a Instituciones"),
               leading: new Icon(Icons.landscape),
               onTap: () {
                 Navigator.of(context).pop();

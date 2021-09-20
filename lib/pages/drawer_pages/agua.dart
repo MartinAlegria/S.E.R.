@@ -47,7 +47,7 @@ class Agua extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "\nEn México actualmente ya es un problema el contar con este recurso y su potabilización, mientras que el 70% del planeta esta constituido por agua solamente el 2.5% es agua dulce y solo contamos con menos del 1% para consumo humano.\n\nSe estima que una persona utiliza aproximadamente 400 litros de agua diariamente, cuando nos bañamos utilizamos en promedio de 200 litros cada 10 minutos y de 6 litros cada que jalamos la cadena del inodoro.\n\nEn Muchas ciudades del País se enfrentan a perder miles le litros por fugas de agua en las tuberías antes de entregarla a los usuarios.\n\nLos mexicanos gastamos el doble de agua que habitantes de Francia, Estados Unidos o Inglaterra, es por ello que te damos las siguientes sugerencias.\n",
+                text: "\nEn México actualmente ya es un problema el contar con este recurso y su potabilización, mientras que el 70% del planeta está constituido por agua solamente el 2.5% es agua dulce y solo contamos con menos del 1% para consumo humano.\n\nSe estima que una persona utiliza aproximadamente 400 litros de agua diariamente, cuando nos bañamos utilizamos en promedio de 200 litros cada 10 minutos y de 6 litros cada que jalamos la cadena del inodoro.\n\nEn Muchas ciudades del País se enfrentan a perder miles le litros por fugas de agua en las tuberías antes de entregarla a los usuarios.\n\nLos mexicanos gastamos el doble de agua que habitantes de Francia, Estados Unidos o Inglaterra, es por ello que te damos las siguientes sugerencias.\n",
             ),
           ]
             ),

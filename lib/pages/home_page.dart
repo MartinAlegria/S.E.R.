@@ -77,16 +77,10 @@ class _HomePageState extends State<HomePage> {
               )
             ),
             TextSpan(
-                text: "RSU (por sus iniciales).\n\nEn México, los",
+                text: "RSU (por sus iniciales).\n\n",
             ),
             TextSpan(
-              text: " RSU ",
-              style: TextStyle(
-                fontWeight: FontWeight.bold 
-              )
-            ),
-            TextSpan(
-                text: "se separan en tres tipos de contenedores de basura que tienen diferente color, según lo que se depositará en ellos:",
+                text: "En Muchos lugares separan la basura por colores, nosotros sugerimos utilizar contenedores en 3 colores diferenciados segun lo que se depositara en ellos:",
             )
           ]
             ),
@@ -132,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "\nTambién existen residuos de manejo especial, electrónicos, peligrosos y biológico infecciosos, que se manejan aparte, pero que te explicamos cuáles son y cómo debes separarlos.",
+                text: "\nTambién existen otros tipos de residuos que se mencionaran y el manejo sugerido",
             ),
           ]
             ),
@@ -192,7 +186,7 @@ class _HomePageState extends State<HomePage> {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-              text: "\nNecesitamos crear una economía circular local, aprovechemos los residuos y ganemos dinero",
+              text: "\nNecesitamos crear una economía circular local, APROVECHANDO los residuos y GANANDO DINERO.",
               style: TextStyle(
                 fontWeight: FontWeight.bold 
               )

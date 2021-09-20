@@ -4,6 +4,18 @@ import './drawer.dart';
 import 'package:ser_1/pages/drawer_pages/sub_pages/in_organicos.dart';
 
 
+  Container Titulos(String titulo, double size){
+    return Container(
+            margin: EdgeInsets.symmetric(vertical:12.0),
+            child: Text(titulo,
+            style: TextStyle(fontWeight: FontWeight.bold,
+              fontSize: size
+            ),
+            textAlign: TextAlign.center,
+            ),
+          );
+  }
+
 class Peligrosos extends StatelessWidget {
 
   Center Cosillo0(String image, String heading, String subhead, BuildContext context, ){
@@ -139,24 +151,83 @@ class Peligrosos extends StatelessWidget {
       body: new ListView(
        scrollDirection: Axis.vertical,
        padding: EdgeInsets.all(10.0),
-       children: <Widget>[
-         RichText(
+       children: 
+       <Widget>[
+
+          Titulos("CUIDADOS AL SEPARAR LOS RESIDUOS DE MANEJO ESPECIAL ", 18.0),
+
+          RichText(
             textAlign: TextAlign.justify,
             text: TextSpan(
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "\nLos RESIDUOS DE MANEJO ESPECIAL deben ser tratados con mucho cuidado ya que representan un peligro para la salud estos pueden ser RESIDUOS ELECTRÓNICOS, RESIDUOS DE MANEJO ESPECIAL, RESIDUOS PELIGROSOS y RESIDUOS BIOLÓGICO INFECCIOSOS\n",
+                text: "\nLos residuos de manejo diferenciado deben ser tratados con mucho ciudado porque representan un riesgo para la salud y debemos separarlos y acopiarlos para su reciclaje y aprovechamiento. Estos pueden ser Residuos Electricos, Electronicos, Reisudos de Manejo Especial, Residuos Peligrosos\n\nEstos residuos 'NO DEBEN SER MEZCLADOS CON LOS RESIDUOS ORGANICOS O INORGANICOS USUALES'",
             ),
           ]
             ),
           ),
+          Titulos("GUÍA PARA IDENTIFICARLOS", 18.0),
+          /*
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text(""),
+          ),*/
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Pañales"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Abatelenguas"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Medicamentos"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Radiografias"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Baterias de autos"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Rocas o desechos de construcción"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Toner y cartuchos de tinta"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Residuos de Adhesivos"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Fibra de vidrio"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Roperos, closets, bases de camas, literas, mesas, sillas, sillones"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Lavamanos y sanitarios"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Llaves de agua, mono mandos, llaves mezcladoras y regaderas"),
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text("Equipos mecánicos para hacer ejercicios"),
+          ),
 
-        Cosillo1('assets/images/manejo.jpg', 'Manejo Especial', 'Residuos de Manejo Especial', context),
-        Cosillo2('assets/images/peligrosos.jpg', 'Peligrosos','Residuos de Manejo Especial', context),
 
-
-       ],
+        ]
       ),
 
     );

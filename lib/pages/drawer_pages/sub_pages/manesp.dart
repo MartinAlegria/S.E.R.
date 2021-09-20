@@ -143,12 +143,12 @@ class ManejoEspecial extends StatelessWidget {
                 style: Theme.of(context).textTheme.body1.copyWith(fontSize: 18.0),
           children: [
             TextSpan(
-                text: "\nSegún el tipo de residuo, este debe ser depositado en una bolsa en la que se le escriba con rotulador el nombre de lo que contiene, para que los recolectores de basura le den el manejo y destino adecuado para seguridad de todos,\n\nLas bolsas NO DEBEN SER MEZCLADAS CON LOS RESIDUOS ORGÁNICOS O INORGÁNICOS USUALES.\n",
+                text: "\nLos residuos de manejo diferenciado deben ser tratados con mucho ciudado porque representan un riesgo para la salud y debemos separarlos y acopiarlos para su reciclaje y aprovechamiento. Estos pueden ser Residuos Electricos, Electronicos, Reisudos de Manejo Especial, Residuos Peligrosos\n\nEstos residuos 'DEBEN SER MEZCLADAS CON LOS RESIDUOS ORGANICOS O INORGANICOS USUALES'",
             ),
           ]
             ),
           ),
-          Titulos("GUÍA PARA IDENTIFICAR LOS RESIDUOS DE MANEJO ESPECIAL", 18.0),
+          Titulos("GUÍA PARA IDENTIFICARLOS", 18.0),
           /*
           ListTile(
             leading: Icon(Icons.info),
@@ -239,7 +239,7 @@ class Biologico extends StatelessWidget {
         padding: EdgeInsets.all(10.0),
         children: <Widget>[
 
-          Titulos("CUIDADOS AL SEPARAR LOS RESIDUOS PELIGROSOS", 18.0),
+          Titulos("CUIDADOS AL SEPARAR ESTOS RESIDUOS", 18.0),
 
           RichText(
             textAlign: TextAlign.justify,

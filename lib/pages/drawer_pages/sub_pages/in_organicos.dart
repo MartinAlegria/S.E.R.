@@ -260,10 +260,6 @@ class CuidadosInorg extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.info),
-            title: Text("Pañales desechables"),
-          ),
-          ListTile(
-            leading: Icon(Icons.info),
             title: Text("Colillas de cigarros"),
           ),
           ListTile(
